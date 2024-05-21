@@ -25,7 +25,7 @@ services:
       GF_USERS_DEFAULT_THEME: "light"
       GF_INSTALL_PLUGINS: "flant-statusmap-panel"
       GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/mikrotik/mikrotik_mktxp_exporter.json
-    image: grafana/grafana:latest
+    image: grafana/grafana-oss:latest
     networks:
       monitoring: null
     ports:
