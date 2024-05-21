@@ -84,7 +84,7 @@ services:
         target: 9080
     restart: unless-stopped
     volumes:
-      - /share/container_data/monitoring/promtail/:/etc/promtail/promtail-config.yml:ro
+      - /share/container_data/monitoring/promtail/promtail-config.yml:/etc/promtail/promtail-config.yml:ro
 
   syslog-ng:
     command: -edv
